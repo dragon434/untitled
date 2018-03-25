@@ -1,0 +1,33 @@
+Thu,08 Mar 2018 11:16:37 模块_logging.py[line:20] DEBUG  this is debug message
+Thu,08 Mar 2018 11:16:37 模块_logging.py[line:21] INFO  this is info messages
+Thu,08 Mar 2018 11:16:37 模块_logging.py[line:22] WARNING  this is  warning messages
+Thu,08 Mar 2018 11:16:37 模块_logging.py[line:23] ERROR  this is error messages
+Thu,08 Mar 2018 11:16:37 模块_logging.py[line:24] CRITICAL  this is critical messages
+Thu,08 Mar 2018 11:16:55 模块_logging.py[line:20] DEBUG  this is debug message
+Thu,08 Mar 2018 11:16:55 模块_logging.py[line:21] INFO  this is info messages
+Thu,08 Mar 2018 11:16:55 模块_logging.py[line:22] WARNING  this is  warning messages
+Thu,08 Mar 2018 11:16:55 模块_logging.py[line:23] ERROR  this is error messages
+Thu,08 Mar 2018 11:16:55 模块_logging.py[line:24] CRITICAL  this is critical messages
+2018-03-08 11:34:18,119 - root - WARNING -  this is  warning messages
+2018-03-08 11:34:18,120 - root - ERROR -  this is error messages
+2018-03-08 11:34:18,120 - root - CRITICAL -  this is critical messages
+2018-03-08 11:40:28,391 - root - DEBUG -  this is debug message
+2018-03-08 11:40:28,392 - root - INFO -  this is info messages
+2018-03-08 11:40:28,392 - root - WARNING -  this is  warning messages
+2018-03-08 11:40:28,392 - root - ERROR -  this is error messages
+2018-03-08 11:40:28,392 - root - CRITICAL -  this is critical messages
+2018-03-13 15:54:04,801 - aaa.log - DEBUG -  this is debug message
+2018-03-13 15:54:04,802 - aaa.log - INFO -  this is info messages
+2018-03-13 15:54:04,803 - aaa.log - WARNING -  this is  warning messages
+2018-03-13 15:54:04,804 - aaa.log - ERROR -  this is error messages
+2018-03-13 15:54:04,804 - aaa.log - CRITICAL -  this is critical messages
+2018-03-19 14:54:58,048 - aaa.log - DEBUG -  this is debug message
+2018-03-19 14:54:58,049 - aaa.log - INFO -  this is info messages
+2018-03-19 14:54:58,049 - aaa.log - WARNING -  this is  warning messages
+2018-03-19 14:54:58,049 - aaa.log - ERROR -  this is error messages
+2018-03-19 14:54:58,049 - aaa.log - CRITICAL -  this is critical messages
+2018-03-19 14:55:12,629 - aaa - DEBUG -  this is debug message
+2018-03-19 14:55:12,629 - aaa - INFO -  this is info messages
+2018-03-19 14:55:12,630 - aaa - WARNING -  this is  warning messages
+2018-03-19 14:55:12,630 - aaa - ERROR -  this is error messages
+2018-03-19 14:55:12,630 - aaa - CRITICAL -  this is critical messages
