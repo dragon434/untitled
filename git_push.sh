@@ -8,7 +8,7 @@ git add .
 sleep 2
 
 echo "提交文件到本地仓库"
-git commit -m "$message"
+git commit -m "$message" &>/dev/null
 sleep 2
 
 echo "提交文件到远程仓库，github"
