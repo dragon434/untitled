@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#-*- coding:utf-8 -*-
+# -*- coding:utf-8 -*-
 # Author ： @jiawenlong
 # Date ：2018-03-23
 
@@ -72,3 +72,26 @@ ret = Foo.__dict__
 print(ret)
 """
 
+
+class Foo:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def __getitem__(self, item):
+        return item + 10
+
+    def __setitem__(self, key, value):
+        print(key, value)
+
+    def __delitem__(self, key):
+        print(key)
+
+
+li = Foo('jia', 19)
+r = li[8]   # 自动执行li对象的类中的 __getitem__ 方法，8 当参数传递给 item
+print(r)
+
+li[100] = 'haha'
+
+del li[999]
