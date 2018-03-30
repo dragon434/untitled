@@ -70,7 +70,6 @@ d = obj1.__dict__   # 将对象中封装的所有内容，通过字典的形式�
 print(d)
 ret = Foo.__dict__
 print(ret)
-"""
 
 
 class Foo:
@@ -79,7 +78,15 @@ class Foo:
         self.age = age
 
     def __getitem__(self, item):
-        return item + 10
+        # return item + 10
+        if type(item) == slice:  # li[1:2:3]
+            print('\n进行切片处理')
+            print('start: %s' % item.start)
+            print('end: %s' % item.stop)
+            print('step: %s\n' % item.step)
+        else:
+            print('进行索引处理')
+            print(item, type(item))
 
     def __setitem__(self, key, value):
         print(key, value)
@@ -90,8 +97,54 @@ class Foo:
 
 li = Foo('jia', 19)
 r = li[8]   # 自动执行li对象的类中的 __getitem__ 方法，8 当参数传递给 item
-print(r)
+# print(r)
+li[1:3:2]
 
 li[100] = 'haha'
-
 del li[999]
+"""
+
+class Foo:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def __iter__(self):
+        # return iter([11, 22, 33, 44])
+        return [11, 22, 33, 44]
+
+
+li = Foo('Justin', 19)
+# 1 执行 li 对象的类中的 __iter__方法，并获取其返回值
+# 2 循环上一步中的返回对象
+
+# 如果类中 有 __iter__ 方法，创建的对象就是可迭代对象
+# 对于  可迭代对象.__iter__() 的返回值 是 迭代器
+# 对于  for 循环，遇到迭代器，执行迭代器的next方法 ; iter([11, 22, 33, 44]) 迭代器
+# 如果是可迭代对象，获取对象的 __iter__方法，然后执行迭代器的next方法 ；def __iter__(): return [11, 22, 33, 44],  可迭代对象
+a = li.__iter__()
+print(type(a))
+
+b = [1, 2, 3]
+print(type(b))
+
+for i in li.__iter__():
+    print(i)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
