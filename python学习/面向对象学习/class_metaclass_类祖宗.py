@@ -24,19 +24,23 @@ __author__ = '@jiawenlong'
 
 
 class Mytype(type):
-
     def __init__(self, *args, **kwargs):
-        print(234)
+        print("遇到 class Foo 执行这个Mytype_init：%s" % 1)
 
     def __call__(self, *args, **kwargs):
-        print(000)
+        print("遇到 Foo() 执行  这个  Mytype_call: %s" % 2)
         n = self.__new__(self)
-        print(n)
+        print("然后创建对象，调用Foo的__new__创建对象：%s " % n)
+        self.__init__(n)
 
-#
+
+# 下面2行是2.7的写法
+# class Foo(object):
+#     __metaclass__ = Mytype
+
 class Foo(object, metaclass=Mytype):
     def __init__(self):
-        print(123)
+        print("最后执行，Foo_init: %s " % 4)
 
     def __call__(self, *args, **kwargs):
         print(111)
@@ -44,8 +48,11 @@ class Foo(object, metaclass=Mytype):
     def function(self):
         print(567)
 
+    # obj 是在new中创建
     def __new__(cls, *args, **kwargs):
-        return 111
+        return 3
+        # return "对象" [obj]
+
 
 obj = Foo()
 # obj.function()

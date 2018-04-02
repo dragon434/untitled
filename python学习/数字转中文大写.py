@@ -22,7 +22,7 @@ big = {
 dw = {
     -1: '',
     0: '',
-    1: '元',
+    1: '',
     2: '拾',
     3: '佰',
     4: '仟',
@@ -71,10 +71,13 @@ def zhongwen(s):
             else:
                 end = end + big[i] + dw[wei]
             wei -= 1
-        end = end + "整"
+        end = end + "圆整"
         print(end)
 
 
 if __name__ == '__main__':
     num = input('请输入要转换的数字_>：')
-    zhongwen(num)
+    if num:
+        zhongwen(num)
+    else:
+        print("请输入数字！！")
