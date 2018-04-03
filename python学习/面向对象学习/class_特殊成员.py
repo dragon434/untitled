@@ -104,6 +104,7 @@ li[100] = 'haha'
 del li[999]
 """
 
+
 class Foo:
     def __init__(self, name, age):
         self.name = name
@@ -112,6 +113,9 @@ class Foo:
     def __iter__(self):
         # return iter([11, 22, 33, 44])
         return [11, 22, 33, 44]
+
+    def __str__(self):
+        return 'jiawenlong'
 
 
 li = Foo('Justin', 19)
@@ -131,20 +135,5 @@ print(type(b))
 for i in li.__iter__():
     print(i)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+name = li
+print(name)

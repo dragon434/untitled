@@ -29,6 +29,7 @@ class Mytype(type):
 
     def __call__(self, *args, **kwargs):
         print("遇到 Foo() 执行  这个  Mytype_call: %s" % 2)
+
         n = self.__new__(self)
         print("然后创建对象，调用Foo的__new__创建对象：%s " % n)
         self.__init__(n)
