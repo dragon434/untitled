@@ -31,8 +31,8 @@ while True:
         v.show()
 """
 
-class Foo:
 
+class Foo:
     __v = None
 
     @classmethod
@@ -43,5 +43,9 @@ class Foo:
             cls.__v = Foo()
             return cls.__v
 
+
 # 不要使用 类()
-obj = Foo.get_instance()
+obj1 = Foo.get_instance()
+print(obj1)
+obj2 = Foo.get_instance()
+print(obj2)

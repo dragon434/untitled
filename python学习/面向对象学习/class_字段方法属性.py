@@ -45,30 +45,32 @@ class province:
         del self.L[1]
         print(self.L)
 
+"""
+# 静态字段使用
+print(province.country)
 
-# print(province.country)
+hn = province('河南')
+print(hn.name)
+
+hn.name = "河南男"
+print(hn.name)
+
+hb = province('河北')
+hb.country = '美国'
+print(hb.country, hb.name)
+
+# 普通方法调用
+obj = province('hh')
+obj.bar()
+obj.sta(1, 2)
+obj.classmd()
 #
-# hn = province('河南')
-# print(hn.name)
-#
-# hn.name = "河南男"
-# print(hn.name)
-#
-# hb = province('河北')
-# hb.country = '美国'
-# print(hb.country, hb.name)
-#
-# # 普通方法调用
-# obj = province('hh')
-# obj.bar()
-# obj.sta(1, 2)
-# obj.classmd()
-#
-# # 静态方法调用 节省内存
-# province.sta(1, 2)
-#
-# # 类方法调用 节省内存
-# province.classmd()
+# 静态方法调用 节省内存
+province.sta(1, 2)
+
+# 类方法调用 节省内存
+province.classmd()
+"""
 
 # 应用场景
 # 1 如果对象中需要保存一些值，执行某功能时，需要使用对象中对值 --- 使用普通方法
