@@ -70,8 +70,8 @@
 
 
 
-import pandas as pd
-import codecs
+# import pandas as pd
+# import codecs
 
 # xd = pd.ExcelFile('/Users/admin/Documents/work/日报-周报/运维日报(2017-09-15-贾文龙).xlsx')
 # df = xd.parse(xd.sheet_names, header=None, keep_default_na=True)
@@ -241,8 +241,8 @@ headers = {
 }
 req = requests.post(url, json=payload, headers=headers)
 auth = req.json()
-print 'req:', req
-print 'auth:', auth
+print('req:', req)
+print('auth:', auth)
 
 # host.get
 payload = {
@@ -258,10 +258,10 @@ payload = {
 }
 res2 = requests.post(url, data=json.dumps(payload), headers=headers)
 res2 = res2.json()
-print 'res2:', res2
+print('res2:', res2)
 
 for host in res2['result']:
-    print host['name']
+    print(host['name'])
 
 
 
