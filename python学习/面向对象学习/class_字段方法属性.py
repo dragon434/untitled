@@ -31,7 +31,7 @@ class province:
         print('classmd')
 
     # 属性
-    @property   # 用于执行 obj.per
+    @property  # 用于执行 obj.per
     def per(self):
         return self.L
 
@@ -44,6 +44,7 @@ class province:
     def per(self):
         del self.L[1]
         print(self.L)
+
 
 """
 # 静态字段使用
@@ -73,7 +74,7 @@ province.classmd()
 """
 
 # 应用场景
-# 1 如果对象中需要保存一些值，执行某功能时，需要使用对象中对值 --- 使用普通方法
+# 1 如果对象中需要保存一些值，执行某功能时，需要使用对象中的值 --- 使用普通方法
 # 2 不需要任何对象中的值 --- 使用静态方法
 
 # 属性调用
