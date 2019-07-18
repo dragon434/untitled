@@ -22,7 +22,7 @@ def list_resvers(s):
         print('no,False')
 
 a = input('请输入字符串> ')
-print(s_revers(a))
+# print(s_revers(a))
 list_resvers(a)
 
 # string = 'abcdef'
