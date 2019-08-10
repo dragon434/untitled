@@ -6,11 +6,14 @@
 # 闭包
 # def outer(x="哈哈哈哈"):
 #     print("do something")
+#     c = 10
+#
 #     def inner():
-#         print(x)
+#         print(x, c)
 #         # return x
 #
 #     return inner
+#
 #
 # func = outer()
 # func()
@@ -28,6 +31,7 @@ def showtime(func):
         print("%s Spend %s" % (func.__name__, stop_time - start_time))
     return jtime
 
+
 @showtime
 def home():
     print("This is home Page")
@@ -37,6 +41,7 @@ def home():
 def phone():
     print("This is phone Page")
     time.sleep(2)
+
 
 @showtime
 def jr():
@@ -91,3 +96,5 @@ jr()
 #     foo(a=1, b=2, c=3)
 #     foo(1, 2, 3, 4, a=1, b=2, c=3)
 #     foo('a', 1, None, a=1, b='2', c=3)
+
+# 装饰器练习

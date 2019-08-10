@@ -1,13 +1,11 @@
 #!/usr/bin/env python
-#-*- coding:utf-8 -*-
+# -*- coding:utf-8 -*-
 # Author ： @jiawenlong
 # Date ：2018-03-08
 
 __author__ = '@jiawenlong'
 
-
 import logging
-
 
 # One
 # # 日志级别的配置
@@ -40,7 +38,6 @@ ch.setFormatter(formatter)
 # 添加输出对象到日志对象
 logger.addHandler(fh)
 logger.addHandler(ch)
-
 
 # 调用
 logger.debug(' this is debug message')
