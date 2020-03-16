@@ -1,0 +1,28 @@
+Sat,10 Aug 2019 21:26:36 模块_logging.py [line:59] DEBUG This is logiging.debug
+Sat,10 Aug 2019 21:26:36 模块_logging.py [line:60] INFO This is logiging.info
+Sat,10 Aug 2019 21:26:36 模块_logging.py [line:61] WARNING This is logiging.warning
+Sat,10 Aug 2019 21:26:36 模块_logging.py [line:62] ERROR This is logiging.error
+Sat,10 Aug 2019 21:26:36 模块_logging.py [line:63] CRITICAL This is logging.critical
+Sat 10 Aug 2019 21:27:15 模块_logging.py [line:59] DEBUG This is logiging.debug
+Sat 10 Aug 2019 21:27:15 模块_logging.py [line:60] INFO This is logiging.info
+Sat 10 Aug 2019 21:27:15 模块_logging.py [line:61] WARNING This is logiging.warning
+Sat 10 Aug 2019 21:27:15 模块_logging.py [line:62] ERROR This is logiging.error
+Sat 10 Aug 2019 21:27:15 模块_logging.py [line:63] CRITICAL This is logging.critical
+Sat 10 Aug 2019 21:31:14 模块_logging.py [行号:60] DEBUG This is logiging.debug
+Sat 10 Aug 2019 21:31:14 模块_logging.py [行号:61] INFO This is logiging.info
+Sat 10 Aug 2019 21:31:14 模块_logging.py [行号:62] WARNING This is logiging.warning
+Sat 10 Aug 2019 21:31:14 模块_logging.py [行号:63] ERROR This is logiging.error
+Sat 10 Aug 2019 21:31:14 模块_logging.py [行号:64] CRITICAL This is logging.critical
+2019-08-10 22:53:43,063 模块_logging.py root [代码行号:97] WARNING  This is logiging.warning
+2019-08-10 22:53:43,065 模块_logging.py root [代码行号:98] ERROR  This is logiging.error
+2019-08-10 22:53:43,066 模块_logging.py root [代码行号:99] CRITICAL  This is logging.critical
+2019-08-10 22:59:19,294 模块_logging.py root [代码行号:96] DEBUG  This is logiging.debug
+2019-08-10 22:59:19,294 模块_logging.py root [代码行号:97] INFO  This is logiging.info
+2019-08-10 22:59:19,295 模块_logging.py root [代码行号:98] WARNING  This is logiging.warning
+2019-08-10 22:59:19,295 模块_logging.py root [代码行号:99] ERROR  This is logiging.error
+2019-08-10 22:59:19,295 模块_logging.py root [代码行号:100] CRITICAL  This is logging.critical
+2019-08-11 15:54:07,316 模块_logging.py root [代码行号:96] DEBUG  This is logiging.debug
+2019-08-11 15:54:07,317 模块_logging.py root [代码行号:97] INFO  This is logiging.info
+2019-08-11 15:54:07,317 模块_logging.py root [代码行号:98] WARNING  This is logiging.warning
+2019-08-11 15:54:07,317 模块_logging.py root [代码行号:99] ERROR  This is logiging.error
+2019-08-11 15:54:07,317 模块_logging.py root [代码行号:100] CRITICAL  This is logging.critical
